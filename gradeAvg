@@ -1,0 +1,46 @@
+#12/5/18
+#This program was made to determine your final average letter grade, GPA and
+#average percentage based off of the inputted test scores
+
+count = 0
+i = 1
+accumulator = 0
+avg = 0
+numTest=input("How many tests have been taken :")
+totalTestGrade = 0
+
+while(i<=numTest):
+    testScore=input("what is your grade :")
+    accumulator += testScore
+    count+=1.00
+    i+=1
+avg = accumulator/count
+print "average is", avg, "%"
+
+if(avg>=93):
+    print "Average Grade = A and 4.00 GPA"
+elif(avg>=90): 
+    print "Average Grade = A- and 3.67 GPA"   
+elif(avg>=87): 
+    print "Average Grade = B+ and 3.33 GPA "    
+elif(avg>=83): 
+    print "Average Grade = B and 3.00 GPA"
+elif(avg>=80): 
+    print "Average Grade = B- and 2.67 GPA" 
+elif (avg>=77):
+    print "Average Grade = C+ and 2.33 GPA"    
+elif (avg>=73):
+    print "Average Grade = C and 2.00 GPA"
+elif (avg>=70):
+    print "Average Grade = C- and 1.67 GPA"    
+elif (avg>=67):
+    print "Average Grade = D+ and 1.33 GPA"
+elif (avg>=63):
+    print "Average Grade = D and 1.00 GPA"    
+elif (avg>=60):
+    print "Average Grade = D- and 0.67 GPA"    
+else:
+    print "Average Grade = F and 0.00 GPA"
+
+print "This grade is determined using Lake's grading scale"
+    
